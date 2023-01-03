@@ -1,0 +1,8 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+iframe {
+    width: 100%;
+    height: 97vh;
+}

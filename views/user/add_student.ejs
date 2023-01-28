@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="signup.css">
+
+    <!-- ============== Icons from Boxicons:  https://boxicons.com/ =================== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <%- include('../navbar/_nav.ejs') %>
+        <div class="signup-container">
+            <div class="signup-sections">
+                <div class="left-section">
+                    <img src="login_image.svg" alt="signup image">
+                </div>
+                <div class="right-section">
+                    <h3>Add New Student</h3>
+                    <p>
+                        &bull; Username of the student must end with @s
+                    </p>
+                    <div class="signup-form">
+                        <form action="/add_student" method="post">
+                            <div class="form-entry">
+                                <label class="red-asterisk">Name :</label>
+                                <input type="text" name="name" placeholder="Ex. Mohd Zeeshan" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Username : </label>
+                                <input type="text" name="username" placeholder="Ex. zeeshan123@s" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Email :</label>
+                                <input type="email" name="email" placeholder="example@gmail.com" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Course :</label>
+                                <select name="course">
+                                    <option value="B.Tech">B.Tech</option>
+                                    <option value="M.Tech">M.Tech</option>
+                                    <option value="MCA">MCA</option>
+                                </select>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Year :</label>
+                                <select name="year">
+                                    <option value="1">Ist year</option>
+                                    <option value="2">2nd year</option>
+                                    <option value="3">3rd year</option>
+                                    <option value="4">4th year</option>
+                                </select>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Roll No. :</label>
+                                <input type="text" name="rollno" placeholder="Ex. 19BTCS0XXHY" required>
+                            </div>
+
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Enrollment No. :</label>
+                                <input type="text" name="enrollno" placeholder="Ex. A19XXXX" required>
+                            </div>
+
+
+                            <div class="form-entry">
+                                <label for="">Contact No. :</label>
+                                <input type="text" name="contactno" placeholder="9876543210">
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Password :</label>
+                                <input type="password" name="password" placeholder="password please" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Confirm Password :</label>
+                                <input type="password" name="confirm_password" placeholder="confirm password" required>
+                            </div>
+
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="signup.css">
+
+    <!-- ============== Icons from Boxicons:  https://boxicons.com/ =================== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <%- include('../navbar/_nav.ejs') %>
+        <div class="signup-container">
+            <div class="signup-sections">
+                <div class="left-section">
+                    <img src="login_image.svg" alt="signup image">
+                </div>
+                <div class="right-section">
+                    <h3>Add New Faculty</h3>
+                    <p>
+                        &bull; Username of the faculty must end with @f
+                    </p>
+                    <div class="signup-form">
+                        <form action="/add_faculty" method="post">
+                            <div class="form-entry">
+                                <label class="red-asterisk">Name : </label>
+                                <input type="text" name="name" placeholder="Ex. Mohd Zeeshan" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Username : </label>
+                                <input type="text" name="username" placeholder="Ex. zeeshan123@f" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label for="">Email :</label>
+                                <input type="email" name="email" placeholder="example@gmail.com">
+                            </div>
+
+                            <div class="form-entry">
+                                <label for="">Contact No. :</label>
+                                <input type="text" name="contactno" placeholder="9876543210">
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Password :</label>
+                                <input type="password" name="password" placeholder="password please" required>
+                            </div>
+
+                            <div class="form-entry">
+                                <label class="red-asterisk">Confirm Password :</label>
+                                <input type="password" name="confirm_password" placeholder="confirm password" required>
+                            </div>
+
+                            <button>Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>

@@ -33,7 +33,7 @@ const studentSchema = new Schema({
     },
     contactno: {
         type: Number,
-        required: true
+        required: true,
     },
     password: {
         type: String,

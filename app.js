@@ -7,7 +7,7 @@ const MongoDbSession = require("connect-mongodb-session")(session);
 const mainRoute = require("./router/mainRoute");
 const userRoute = require("./router/userRoute");
 const attendRoute = require("./router/attendRoute");
-const user_session = require("./controller/user_session");
+const reportRoute = require("./router/reportRoute");
 
 const app = express();
 
@@ -16,6 +16,7 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public/images"));
 app.use(express.static(__dirname + "/public/css"));
 app.use(express.static(__dirname + "/public/js"));
+app.use(express.static(__dirname + "/public"));
 // app.use(express.static(__dirname + "/public/time_table"));
 
 app.use(express.json());
@@ -42,6 +43,7 @@ app.use(
 app.use(mainRoute);
 app.use(userRoute);
 app.use(attendRoute);
+app.use(reportRoute);
 
 app.all("/", (req, res) => res.render("home"));
 

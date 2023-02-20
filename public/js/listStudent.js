@@ -26,28 +26,89 @@
 
 const people = [
     {
-        name: "Ghulam Mustafa",
-        rollno: "19BTCS001HY",
+        no: 1,
+        name: "Mohd Azeem",
+        rollno: "19BTCS025HY",
     },
     {
-        name: "Adil Masood",
-        rollno: "19BTCS002HY",
-    },
-    {
-        name: "Mohd Waqar Hashim",
-        rollno: "19BTCS003HY",
-    },
-    {
+        no: 2,
         name: "Mohd Shafi",
-        rollno: "19BTCS004HY",
+        rollno: "19BTCS025HY",
     },
     {
-        name: "Mohd Ahsan",
-        rollno: "19BTCS005HY",
+        no: 3,
+        name: "Mohd Huzaifa",
+        rollno: "19BTCS025HY",
     },
     {
-        name: "Mohd Ahmad",
-        rollno: "19BTCS006HY",
+        no: 4,
+        name: "Mohd Waqar Hashim",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 5,
+        name: "Abdul Akhir",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 6,
+        name: "Salman Ansari",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 7,
+        name: "Zeeshan Ali",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 8,
+        name: "Saba Mariyam",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 9,
+        name: "Aleena Raees",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 10,
+        name: "Jamal Hashim",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 11,
+        name: "Adil Masood",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 12,
+        name: "Adil Masood",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 13,
+        name: "Adil Masood",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 14,
+        name: "Adil Masood",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 15,
+        name: "Adil Masood",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 16,
+        name: "Adil Masood",
+        rollno: "19BTCS025HY",
+    },
+    {
+        no: 17,
+        name: "Adil Masood",
+        rollno: "19BTCS025HY",
     },
 ];
 
